@@ -82,7 +82,7 @@ const result_path = '';
 
   const data_grid = prices.map((i) => {
     result = {
-      date: new Date(i[0]),
+      date: (new Date(i[0])).toLocaleDateString(),
       open: i[1],
       high: i[2],
       low: i[3],
